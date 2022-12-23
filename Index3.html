@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Paloaguao</title>
+     <meta charset="utf-8">
+     <meta name="Comercioagricola" content="Fruticas y verduritas">
+     <meta name="author" content="Julieth, Andres, Cristian">
+     <meta name="refresh" content="10">
+     <meta name="languaje" content="ES">
+     <meta name="copyright" content="fuentepropia">
+     <link rel="shorcut icon" href="./Image/iconpaloaguao.jpg">
+     <link rel="stylesheet" type="text/css" href="./Css/EstilosIndex3.css">
+</head>
+<body>
+    <header class="menu">
+<!--Menú desplegable-->
+        <section class="menu_container">
+<!--Logo y nombre de la aplicacion-->
+        <article class="logo">
+            <img src="./Image/iconpaloaguao.jpg" alt="logopaloaguao">
+            <h1>Paloaguao</h1>
+        </article>  
+<!--buscador-->
+        <input id="buscador" type="text" name="Busqueda" placeholder=" &nbsp; ¿Qué desea buscar?">  
+            <ul class="menu_links">
+                <li class="menu_item">
+                    <a href="./Index.html" class="menu_link">Inicio</a>
+                </li>
+                <li class="menu_item">
+                    <a href="./Inicio Sesion.html" class="menu_link">Iniciar Sesión</a>
+                </li>
+                <li class="menu_item menu_item--show">
+                    <a href="#" class="menu_link">Categoría <img src="./Image/arrow.svg" class="menu_arrow"></a>
+                    <ul class="menu_nesting">
+                        <li class="menu_inside">
+                            <a href="#" class="menu_link menu_link--inside">Frutas</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu_link menu_link--inside">Verduras</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu_item">
+                    <a href="#" class="menu_link">Contactanos</a>
+                </li>
+            </ul>
+            <article class="menu_hamburguer">
+                <img src="./Image/menu.svg" class="menu_img">
+            </article>
+        </section>
+    <script src="js/app.js"></script>
+    </header>
+<!-----intro----->
+    <section class="sep">
+        <article id="slider">
+                    <ul>
+                    <li><img src="./Image/carrusel1.jpg" alt="valorant" class="cr"></li>
+                    <li><img src="./Image/carrusel2.jpg" alt="mouse" class="crr"></li>
+                    <li><img src="./Image/carrusel3.jpg" alt="silla" class="crr1"></li>
+                    <li><img src="./Image/carrusel4.jpg" alt="teclado" class="crr2"></li> 
+                    </ul>       
+            </article>
+    </section>
+            <section class="v">
+                <article id="vid">
+                    <video autoplay controls>
+                    <source src="./Video/paloaguao.mp4" type="video/mp4" />
+                    Su navegador no soporta contenido multimedia.
+                    </video>
+                </article>
+                <article id="text">
+                    <p class="inf0">Los beneficios desde la infancia hasta la edad adulta incluyen un mejor enfoque y concentración, habilidades sociales, desarrollo de la imaginación y la creatividad.</p>
+                </article>
+            </section>
+<!--Productos-->
+    <section class="contenido">
+        <article class="mostrador" id="mostrador">
+            <article class="fila">
+                <article class="item" onclick="cargar(this)">
+                    <article class="contenedor-foto"> 
+                        <img src="./Image/zanahoria.png" alt="zanahoria">   
+                    </article>
+                    <p class="descripcion">Zanahoria</p>
+                    <span class="precio">$ 1.300</span>
+                </article>
+                <article class="item" onclick="cargar(this)">
+                    <article class="contenedor-foto">
+                        <img src="./Image/manzana.png" alt="manzana" class="fruticas">
+                    </article>
+                    <p class="descripcion" id>Manzanas </p>
+                    <span class="precio">$ 1.800</span>
+                </article>
+            </article>
+            <article class="fila">
+                <article class="item" onclick="cargar(this)">
+                    <article class="contenedor-foto">
+                        <img src="./Image/cebollalarga.png" alt="Cebolla" class="fruticas">
+                    </article>
+                    <p class="descripcion">Cebolla Larga</p>
+                    <span class="precio">$ 3.600</span>
+                </article>
+                <article class="item" onclick="cargar(this)">
+                    <article class="contenedor-foto">
+                        <img src="./Image/fresas.png" alt="fresas">
+                    </article>
+                    <p class="descripcion">Fresas</p>
+                    <span class="precio">$ 1300</span>
+                </article>
+            </article>
+        </article>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <article class="seleccion" id="seleccion">
+            <article class="cerrar" onclick="cerrar()">
+                &#x2715
+            </article>
+            <article class="info">
+                <img src="img/1.png" alt="" id="img">
+                <p id="descripcion">Por Kg</p>
+                <span class="precio" id="precio">$ .....</span>
+                <article class="fila">
+                    <article class="size">
+                        <label for="">Libras</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                        </select>
+                    </article>
+                    <button>AGREGAR AL CARRITO</button>
+                </article>
+            </article>
+        </article>
+    </section>
+    <script src="script.js"></script>
+<!--Bootstrap-->
+    <section class="paginas">
+        <article id="pag">
+            <a href="./Index.html" class="pagina">1</a>
+            <a href="./Index1.html" class="pagina">2</a>
+            <a href="./Index2.html" class="pagina">3</a>
+            <a href="./Index3.html" class="pagina">4</a>
+        </article>
+    </section>
+<!--articulos
+            <article id="prod" onclick="cargar(this)">
+                <img src="./Image/pimenton.png" alt="pimenton">
+                <h3>Pimentón Rojo</h3>
+                <article id="precio">$5.000</article>
+            </article>
+        </article>-->
+<!--FinPagina--->
+<footer>
+    
+    <section class="fin">
+        <article id="pagos">
+            <p>Metodos de pago Nequi, Tarjeta Debito, Credito y Contraentrega</p>
+        </article>
+    </section>
+    <section class="footer">
+    <br> &nbsp; &nbsp; Políticas y Privacidad   &nbsp; &nbsp;&nbsp;     Derechos de autor    &nbsp; &nbsp;&nbsp;    Más información de nuestros productos <br><br>
+    </section>
+</footer>
+</body>
+
+</html>

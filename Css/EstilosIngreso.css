@@ -1,0 +1,57 @@
+* {
+	margin: 0px;
+	padding: 0px;
+  font-family: Verdana;
+}
+
+body {
+  background: #87A878;
+}
+
+h3{
+	text-align: center;
+	font-size: 2vw;
+	margin-bottom: 12px;
+	color: #5D7651;
+}
+.formulario {
+	width: 40%;
+	margin: 8% auto;
+	padding: 6%;
+	background: #B0BC98;
+}
+
+.caja{
+	padding: 3%;
+	width: 85%;
+	border: 1px solid #87A878;
+	margin-bottom: 2px;
+	margin: 7px;
+	outline:none;
+	font-size: 1vw;
+}
+
+p {
+	text-align: center;
+	font-size: 1vw;
+	color: #5D7651;
+}
+
+a {
+	text-decoration: underline;
+	font-size: 1vw;
+	color: white;
+}
+
+#button {
+	width: 60%;
+	background: #C7CCB9;
+	padding: 3%;
+	margin: auto;
+	font-size: 1vw;
+	border: none;
+	cursor: pointer;
+	justify-content: center;
+	display: flex;
+	color: #5D7651;
+}
